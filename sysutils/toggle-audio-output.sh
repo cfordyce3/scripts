@@ -4,7 +4,6 @@
 
 # Get default sink (so we know which to toggle away from)
 DEFAULT_SINK=$(pactl get-default-sink)
-echo $DEFAULT_SINK
 
 # Get all sinks
 sinks=$(pactl list sinks short | grep -o "alsa[A-Za-z0-9._-]*") 
